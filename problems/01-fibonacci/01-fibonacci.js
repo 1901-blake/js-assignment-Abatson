@@ -13,7 +13,7 @@ if(n < 0){
     return n;
 }
 if(isNaN(n)){
-    console.log('error: NaN is not a number. returning sumNum')
+    console.log('error: NaN is not a number. returning n')
     return n;
 }
 //if n is zero return 0, a base case for recursion

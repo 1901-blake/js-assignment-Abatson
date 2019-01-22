@@ -37,6 +37,10 @@ function printShape(shape, height, character) {
     console.log('error: height must be odd')
     return '';
   }
+  if(character.length > 1){
+    console.log("error: character must be a single character")
+    return ' ';
+  }
   
   let returnString = ''
   if(shape === "Square"){

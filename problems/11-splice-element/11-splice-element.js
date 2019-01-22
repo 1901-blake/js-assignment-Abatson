@@ -12,11 +12,11 @@ function spliceElement(someArr, index) {
     }
     //make sure index is a real number
     if(typeof(index) !== 'number' || isNaN(index)){
-        throw new Error('Usage: indices need to be numbers')
+        throw new Error('Usage: index need to be numbers')
     }
     //make sure startindex is in bounds
-    if(index < 0 ){
-        index = 0;
+    if(index < 0 || index > someArr.length){
+        console.log("error: index is out of bound of array")
     }
 
     let retArr = [];
